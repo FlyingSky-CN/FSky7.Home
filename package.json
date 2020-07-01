@@ -1,6 +1,6 @@
 {
   "name": "fsky7.home",
-  "version": "1.0.0",
+  "version": "1.0.18",
   "description": "FlyingSky's Home",
   "main": "webpack.config.js",
   "dependencies": {
