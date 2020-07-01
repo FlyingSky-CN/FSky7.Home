@@ -1,3 +1,4 @@
 node_modules/
-src/static/mdui/
+static/mdui/
 dist/
+old/
