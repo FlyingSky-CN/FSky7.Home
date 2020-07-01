@@ -1,0 +1,25 @@
+{
+  "name": "fsky7.home",
+  "version": "1.0.0",
+  "description": "FlyingSky's Home",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot",
+    "build": "webpack --progress --hide-modules --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
