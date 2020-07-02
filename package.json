@@ -20,6 +20,6 @@
     "build": "webpack --progress --hide-modules --mode production"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "FlyingSky-CN",
+  "license": "MIT"
 }
