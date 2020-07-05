@@ -18,23 +18,23 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return require('../../data/contact.json')
-        }
+export default {
+    data() {
+        return require("../../data/contact.json");
     }
+};
 </script>
 
 <style>
-    .fs-contact {
-        margin: 13px 0px 16px
-    }
+.fs-contact {
+    margin: 13px 0px 16px;
+}
 
-    .fs-contact .mdui-list {
-        padding: 0px
-    }
+.fs-contact .mdui-list {
+    padding: 0px;
+}
 
-    .fs-contact .fs-background {
-        background-color: rgba(0, 0, 0, .05)
-    }
+.fs-contact .fs-background {
+    background-color: rgba(0, 0, 0, 0.05);
+}
 </style>

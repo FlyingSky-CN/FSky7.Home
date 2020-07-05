@@ -14,35 +14,35 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return require('../../data/header.json')
-        },
-        methods: {
-            switchDarkMode() {
-                window.switchDarkMode()
-            }
+export default {
+    data() {
+        return require("../../data/header.json");
+    },
+    methods: {
+        switchDarkMode() {
+            window.switchDarkMode();
         }
     }
+};
 </script>
 
 <style>
-    @keyframes fadein-1 {
-        0% {
-            opacity: 0
-        }
-
-        25% {
-            opacity: 0;
-            transform: translateY(-24px)
-        }
-
-        100% {
-            opacity: 1
-        }
+@keyframes fadein-1 {
+    0% {
+        opacity: 0;
     }
 
-    .mdui-appbar {
-        animation: fadein-1 1s ease
+    25% {
+        opacity: 0;
+        transform: translateY(-24px);
     }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.mdui-appbar {
+    animation: fadein-1 1s ease;
+}
 </style>

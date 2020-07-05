@@ -3,15 +3,15 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return require('../../data/footer.json')
-        }
+export default {
+    data() {
+        return require("../../data/footer.json");
     }
+};
 </script>
 
 <style>
-    .fs-foot {
-        padding: 32px
-    }
+.fs-foot {
+    padding: 32px;
+}
 </style>

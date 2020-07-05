@@ -10,44 +10,44 @@
 </template>
 
 <script>
-    import NavbarItem from './NavbarItem.vue';
+import NavbarItem from "./NavbarItem.vue";
 
-    export default {
-        components: {
-            NavbarItem
-        },
-        data() {
-            return {
-                navbar: 'fsDrawerL',
-                list: require('../../data/navbar.json')
-            }
-        }
+export default {
+    components: {
+        NavbarItem
+    },
+    data() {
+        return {
+            navbar: "fsDrawerL",
+            list: require("../../data/navbar.json")
+        };
     }
+};
 </script>
 
 <style>
+.mdui-drawer {
+    z-index: 4000;
+}
+
+@keyframes fadein-2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+        transform: translate(-128px, -24px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1024px) {
     .mdui-drawer {
-        z-index: 4000
+        animation: fadein-2 1s ease;
     }
-
-    @keyframes fadein-2 {
-        0% {
-            opacity: 0
-        }
-
-        25% {
-            opacity: 0;
-            transform: translate(-128px, -24px)
-        }
-
-        100% {
-            opacity: 1
-        }
-    }
-
-    @media (min-width: 1024px) {
-        .mdui-drawer {
-            animation: fadein-2 1s ease
-        }
-    }
+}
 </style>
