@@ -20,27 +20,7 @@
 <script>
     export default {
         data() {
-            return {
-                title: '联系方式 / Contact',
-                icon: 'account_circle',
-                data: [{
-                    href: 'mailto:me@fsky7.com',
-                    key: 'E-mail',
-                    value: 'me@fsky7.com'
-                }, {
-                    href: 'https://t.me/flyingsky666',
-                    key: 'Telegram',
-                    value: '@FlyingSky666'
-                }, {
-                    href: 'https://github.com/FlyingSky-CN',
-                    key: 'GitHub',
-                    value: 'FlyingSky-CN'
-                }, {
-                    href: 'https://weibo.com/flyingsky7',
-                    key: 'Weibo',
-                    value: 'FlyingSky'
-                }]
-            }
+            return require('../../data/contact.json')
         }
     }
 </script>

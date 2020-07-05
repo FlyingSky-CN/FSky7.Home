@@ -21,11 +21,7 @@
 <script>
     export default {
         data() {
-            return {
-                name: 'FlyingSky',
-                slogan: '来自 2.5 次元的咸鱼一枚',
-                icon: 'gesture'
-            }
+            return require('../../data/title.json')
         }
     }
 </script>

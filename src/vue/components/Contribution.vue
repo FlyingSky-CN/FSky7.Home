@@ -13,11 +13,7 @@
 <script>
     export default {
         data() {
-            return {
-                title: 'GitHub',
-                subtitle: 'Contribution',
-                src: 'https://api.fsky7.com/GitHub/getChart'
-            }
+            return require('../../data/contribution.json')
         }
     }
 </script>

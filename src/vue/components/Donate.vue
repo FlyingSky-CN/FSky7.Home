@@ -4,7 +4,7 @@
             <div class="mdui-card-primary-title">{{title}}</div>
             <div class="mdui-card-primary-subtitle">{{subtitle}}</div>
         </div>
-        <div class="mdui-card-content" v-html="text"></div>
+        <div class="mdui-card-content" v-html="text.replace(/\n/g,'<br/>')"></div>
         <div class="mdui-card-actions" style="padding: 16px">
             <a class="mdui-btn mdui-ripple fs-afdian" :href="afdian" target="_blank">爱发电 /
                 Afdian</a>
@@ -15,12 +15,7 @@
 <script>
     export default {
         data() {
-            return {
-                title: '用爱发电',
-                subtitle: '赞助我 / Donate',
-                text: '我目前参与的都是些非盈利项目，您可以选择赞助我，各位的支持是我最大的动力。\n除了下方给出的赞助方式，您也可以直接联系我。'.replace(/\n/g, '<br/>'),
-                afdian: 'https://afdian.net/@flyingsky'
-            }
+            return require('../../data/donate.json')
         }
     }
 </script>

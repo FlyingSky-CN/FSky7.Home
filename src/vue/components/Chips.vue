@@ -10,27 +10,7 @@
 <script>
     export default {
         data() {
-            return {
-                data: [{
-                    icon: 'person',
-                    text: 'INFP'
-                }, {
-                    icon: 'timeline',
-                    text: '拾光者'
-                }, {
-                    icon: 'code',
-                    text: 'PHPer'
-                }, {
-                    icon: 'all_inclusive',
-                    text: '白夜梦想家'
-                }, {
-                    icon: 'bubble_chart',
-                    text: 'JK & DK'
-                }, {
-                    icon: 'extension',
-                    text: '解谜玩家'
-                }]
-            }
+            return require('../../data/chips.json')
         },
         methods: {
             shuffle: function (arr) {

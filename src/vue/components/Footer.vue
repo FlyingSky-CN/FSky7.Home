@@ -1,12 +1,14 @@
 <template>
-    <div class="fs-foot mdui-typo">
-        <b>FlyingSky's Website</b><br />
-        Started in 2017<br />
-        <br />
-        Version 18 (20200701) .<br>
-        Copyright &copy; 2017-2020 <a href="https://fsky7.com">FlyingSky</a> .
-    </div>
+    <div class="fs-foot mdui-typo" v-html="data.replace('{{version}}', version)"></div>
 </template>
+
+<script>
+    export default {
+        data() {
+            return require('../../data/footer.json')
+        }
+    }
+</script>
 
 <style>
     .fs-foot {

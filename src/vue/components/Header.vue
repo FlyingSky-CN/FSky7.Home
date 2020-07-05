@@ -16,15 +16,7 @@
 <script>
     export default {
         data() {
-            return {
-                title: 'FlyingSky\'s Home',
-                href: 'https://fsky7.com',
-                icon: {
-                    navbar: 'menu',
-                    darkmode: 'brightness_4'
-                },
-                navbar: 'fsDrawerL'
-            }
+            return require('../../data/header.json')
         },
         methods: {
             switchDarkMode() {

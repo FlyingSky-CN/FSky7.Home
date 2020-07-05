@@ -1,0 +1,9 @@
+{
+    "title": "FlyingSky\"s Home",
+    "href": "https://fsky7.com",
+    "icon": {
+        "navbar": "menu",
+        "darkmode": "brightness_4"
+    },
+    "navbar": "fsDrawerL"
+}
