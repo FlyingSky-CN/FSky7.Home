@@ -1,0 +1,24 @@
+body::-webkit-scrollbar,
+[class*="v-"]::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.mdui-theme-layout-dark img {
+    filter: brightness(75%)
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [class*="mdui-"] {
+        animation: none !important
+    }
+}
+
+.f-dark {
+    background: #121212!important;
+    color: #fff!important;
+}
+
+.f-dark .v-navigation-drawer__content {
+    background: #121212!important;
+}

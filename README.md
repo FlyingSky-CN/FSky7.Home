@@ -1,24 +1,21 @@
-# fsky7.home
+# 🎈 FSky7.Home
 
-## Project setup
+一个简约的个人网站主页
+
+基于 Vue & Vuetify
+
+## 📦 基础
+
 ```
-npm install
+npm i --save
 ```
 
-### Compiles and hot-reloads for development
+## 💎 开发
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

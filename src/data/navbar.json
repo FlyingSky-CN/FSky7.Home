@@ -1,0 +1,51 @@
+[
+    {
+        "text": "Home",
+        "data": null,
+        "icon": "gesture",
+        "link": "https://fsky7.com/",
+        "color": "blue"
+    },
+    {
+        "text": "Blog",
+        "data": null,
+        "icon": "earth",
+        "link": "https://blog.fsky7.com/",
+        "color": "green"
+    },
+    {
+        "text": "Dashboard",
+        "data": null,
+        "icon": "view-dashboard",
+        "link": "https://dash.fsky7.com/",
+        "color": "deep-orange"
+    },
+    {
+        "text": "Projects",
+        "data": [
+            {
+                "href": "https://github.com/FlyingSky-CN/MDr",
+                "text": "Typecho theme | MDr"
+            },
+            {
+                "href": "https://github.com/FlyingSky-CN/initial-fly",
+                "text": "Typecho theme | initial-fly"
+            },
+            {
+                "href": "https://paperclip.wiki",
+                "text": "回形针 PaperClip Fans"
+            },
+            {
+                "href": "https://for1833.fsky7.com",
+                "text": "For 1833 - 框女"
+            },
+            {
+                "href": "https://fsky7.com",
+                "text": "FlyingSky's Website"
+            }
+        ],
+        "icon": "library",
+        "link": null,
+        "color": "deep-purple"
+    }
+]
