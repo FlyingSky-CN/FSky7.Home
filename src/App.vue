@@ -2,10 +2,10 @@
     <v-app :class="dark ? 'f-dark' : ''">
         <v-app-bar app prominent shrink-on-scroll elevate-on-scroll clipped-left :dark="dark">
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-            <v-toolbar-title>FlyingSky's Home</v-toolbar-title>
+            <v-toolbar-title>{{header.title}}</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon @click.stop="dark ? offDarkMode() : onDarkMode()">
-                <v-icon>mdi-brightness-4</v-icon>
+                <v-icon>mdi-{{header.icon.darkmode}}</v-icon>
             </v-btn>
         </v-app-bar>
 
@@ -16,7 +16,8 @@
         <v-main :dark="dark">
             <f-main-title></f-main-title>
             <v-container>
-                
+                <f-main-about :dark="dark"></f-main-about>
+                <f-main-chips></f-main-chips>
             </v-container>
         </v-main>
     </v-app>
@@ -27,17 +28,20 @@
 
     import FNavbarList from './components/NavbarList'
     import FMainTitle from './components/Title'
+    import FMainAbout from './components/About'
+    import FMainChips from './components/Chips'
 
     export default {
         name: 'App',
 
         components: {
-            FNavbarList, FMainTitle
+            FNavbarList, FMainTitle, FMainAbout, FMainChips
         },
 
         data: () => ({
             onDarkMode() { },
             offDarkMode() { },
+            header: require("./data/header.json"),
             dark: false,
             drawer: null,
         }),

@@ -1,0 +1,43 @@
+<template>
+    <div class="f-chips">
+        <v-chip class="ma-1" v-for="(item, index) in shuffle(tag)" :key="index">
+            <v-avatar left>
+                <v-icon>mdi-{{item.icon}}</v-icon>
+            </v-avatar>
+            {{item.text}}
+        </v-chip>
+        <v-chip class="ma-1" v-for="(item, index) in shuffle(language)" :key="index + tag.length">
+            <v-avatar left :style="'background: '+item.color"></v-avatar>
+            {{item.name}}
+        </v-chip>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                tag: require("../data/chips.json"),
+                language: require("../data/language.json")
+            };
+        },
+        methods: {
+            shuffle: function (arr) {
+                var len = arr.length;
+                for (var i = 0; i < len - 1; i++) {
+                    var index = parseInt(Math.random() * (len - i));
+                    var temp = arr[index];
+                    arr[index] = arr[len - i - 1];
+                    arr[len - i - 1] = temp;
+                }
+                return arr;
+            }
+        }
+    };
+</script>
+
+<style>
+    .f-chips {
+        margin: 14px -4px 10px;
+    }
+</style>

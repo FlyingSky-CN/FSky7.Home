@@ -1,0 +1,47 @@
+[
+    {
+        "color": "#4F5D95",
+        "name": "PHP",
+        "tip": "世界上最好的编程语言！"
+    },
+    {
+        "color": "#2c3e50",
+        "name": "Vue",
+        "tip": "在学了在学了..."
+    },
+    {
+        "color": "#f1e05a",
+        "name": "JavaScript",
+        "tip": "<del>jQuery User</del>"
+    },
+    {
+        "color": "#e34c26",
+        "name": "HTML",
+        "tip": "HTML 是编程语言（被打）"
+    },
+    {
+        "color": "#3f51b5",
+        "name": "MDUI",
+        "tip": "Material Design User Interface"
+    },
+    {
+        "color": "#212121",
+        "name": "MDL",
+        "tip": "接触 MDUI 之前都在用这个"
+    },
+    {
+        "color": "#C1F12E",
+        "name": "Batchfile",
+        "tip": "Beginning"
+    },
+    {
+        "color": "#3572A5",
+        "name": "Python",
+        "tip": "Loading..."
+    },
+    {
+        "color": "#00ADD8",
+        "name": "Golang",
+        "tip": "这玩意...有 PHP 好吗？"
+    }
+]
