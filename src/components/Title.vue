@@ -1,5 +1,5 @@
 <template>
-    <v-container class="f-home align-center" style="height: calc(100vh - 128px);">
+    <v-container class="f-home align-center mt-n16" style="height: 100vh">
         <div class="d-sm-none text-center f-title" style="width: 100%;">
             <div class="f-icon-center">
                 <v-icon>mdi-{{icon}}</v-icon>
