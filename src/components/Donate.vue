@@ -15,6 +15,7 @@
                 class="ma-2"
                 elevation="0"
                 style="background: linear-gradient(90deg, #946ce6, #7e5fd9); color: white"
+                href="https://afdian.net/@flyingsky"
             >爱发电 / Afdian</v-btn>
         </v-card-actions>
     </v-card>
