@@ -1,5 +1,4 @@
-[
-    {
+[{
         "text": "Home",
         "data": null,
         "icon": "gesture",
@@ -14,16 +13,15 @@
         "color": "green"
     },
     {
-        "text": "Dashboard",
+        "text": "Laboratory",
         "data": null,
-        "icon": "view-dashboard",
-        "link": "https://dash.fsky7.com/",
+        "icon": "hammer-wrench",
+        "link": "https://lab.fsky7.com/",
         "color": "deep-orange"
     },
     {
         "text": "Projects",
-        "data": [
-            {
+        "data": [{
                 "href": "https://github.com/FlyingSky-CN/MDr",
                 "text": "Typecho theme | MDr"
             },
@@ -36,15 +34,23 @@
                 "text": "回形针 PaperClip Fans"
             },
             {
+                "href": "https://space.bilibili.com/32792271/channel/detail?cid=170055",
+                "text": "BiliOB 用户排名观察"
+            },
+            {
                 "href": "https://for1833.fsky7.com",
                 "text": "For 1833 - 框女"
+            },
+            {
+                "href": "https://space.bilibili.com/32792271/channel/detail?cid=170056",
+                "text": "逐星原 / Minecraft"
             },
             {
                 "href": "https://fsky7.com",
                 "text": "FlyingSky's Website"
             }
         ],
-        "icon": "library",
+        "icon": "package-variant-closed",
         "link": null,
         "color": "deep-purple"
     }

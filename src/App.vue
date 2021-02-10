@@ -5,7 +5,7 @@
             elevate-on-scroll
             clipped-left
             :dark="dark"
-            :color="dark ? '#212121' : '#fff'"
+            :color="dark ? '#121212' : '#fff'"
         >
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>{{header.title}}</v-toolbar-title>
@@ -25,49 +25,52 @@
                 <f-main-about :dark="dark"></f-main-about>
                 <f-main-chips :dark="dark"></f-main-chips>
                 <f-contact :dark="dark"></f-contact>
+                <f-main-site :dark="dark"></f-main-site>
                 <f-donate :dark="dark"></f-donate>
-                <f-footer></f-footer>
+                <f-footer :dark="dark"></f-footer>
             </v-container>
         </v-main>
     </v-app>
 </template>
 
 <script>
-import Darkmode from "./assets/darkmode";
+    import Darkmode from "./assets/darkmode";
 
-import FNavbarList from "./components/NavbarList";
-import FMainTitle from "./components/Title";
-import FMainAbout from "./components/About";
-import FMainChips from "./components/Chips";
-import FContact from "./components/Contact";
-import FDonate from "./components/Donate";
-import FFooter from "./components/Footer";
+    import FNavbarList from "./components/NavbarList";
+    import FMainTitle from "./components/Title";
+    import FMainAbout from "./components/About";
+    import FMainChips from "./components/Chips";
+    import FContact from "./components/Contact";
+    import FMainSite from "./components/Site";
+    import FDonate from "./components/Donate";
+    import FFooter from "./components/Footer";
 
-export default {
-    name: "App",
+    export default {
+        name: "App",
 
-    components: {
-        FNavbarList,
-        FMainTitle,
-        FMainAbout,
-        FMainChips,
-        FContact,
-        FDonate,
-        FFooter,
-    },
+        components: {
+            FNavbarList,
+            FMainTitle,
+            FMainAbout,
+            FMainChips,
+            FMainSite,
+            FContact,
+            FDonate,
+            FFooter,
+        },
 
-    data: () => ({
-        onDarkMode() {},
-        offDarkMode() {},
-        header: require("./data/header.json"),
-        dark: false,
-        drawer: false,
-    }),
+        data: () => ({
+            onDarkMode() {},
+            offDarkMode() {},
+            header: require("./data/header.json"),
+            dark: false,
+            drawer: false
+        }),
 
-    mounted() {
-        Darkmode(this);
-    },
-};
+        mounted() {
+            Darkmode(this);
+        },
+    };
 </script>
 
 <style src="./assets/global.css"></style>

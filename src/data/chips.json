@@ -1,6 +1,5 @@
-[
-    {
-        "icon": "account",
+[{
+        "icon": "account-circle-outline",
         "text": "INFP"
     },
     {
@@ -12,11 +11,43 @@
         "text": "白夜梦想家"
     },
     {
-        "icon": "chart-bubble",
+        "icon": "thought-bubble-outline",
         "text": "JK & DK"
     },
     {
-        "icon": "thought-bubble-outline",
+        "icon": "atom",
         "text": "解谜玩家"
+    },
+    {
+        "icon": "judaism",
+        "text": "Ingress Res Agent"
+    },
+    {
+        "icon": "code-tags",
+        "text": "PHP"
+    },
+    {
+        "icon": "code-tags",
+        "text": "Python"
+    },
+    {
+        "icon": "code-braces",
+        "text": "Vue"
+    },
+    {
+        "icon": "code-braces",
+        "text": "JavaScript"
+    },
+    {
+        "icon": "shape-outline",
+        "text": "喵~"
+    },
+    {
+        "icon": "music-note-outline",
+        "text": "音游玩家"
+    },
+    {
+        "icon": "source-branch",
+        "text": "Open Source"
     }
 ]

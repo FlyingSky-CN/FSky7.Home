@@ -1,0 +1,27 @@
+{
+    "data": [{
+            "href": "https://blog.fsky7.com",
+            "key": "Blog",
+            "value": "FlyingSky's Blog",
+            "color": "#2EA9DF"
+        },
+        {
+            "href": "https://space.bilibili.com/32792271",
+            "key": "Bilibili",
+            "value": "FlyingSky_",
+            "color": "#F596AA"
+        },
+        {
+            "href": "https://github.com/FlyingSky-CN",
+            "key": "GitHub",
+            "value": "@FlyingSky-CN",
+            "color": "#787D7B"
+        },
+        {
+            "href": "https://weibo.com/flyingsky7",
+            "key": "Weibo",
+            "value": "@FlyingSky",
+            "color": "#F9BF45"
+        }
+    ]
+}
