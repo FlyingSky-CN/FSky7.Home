@@ -8,5 +8,8 @@ document.title = 'FlyingSky\'s Home'
 
 new Vue({
 	vuetify,
-	render: h => h(App)
+	render: h => h(App),
+	mounted() {
+		document.dispatchEvent(new Event('render-event'))
+	}
 }).$mount('#app')
