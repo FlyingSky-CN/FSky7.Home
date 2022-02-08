@@ -7,11 +7,13 @@
             :dark="dark"
             :color="dark ? '#121212' : '#fff'"
         >
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-            <v-toolbar-title>{{header.title}}</v-toolbar-title>
+            <v-app-bar-nav-icon
+                @click.stop="drawer = !drawer"
+            ></v-app-bar-nav-icon>
+            <v-toolbar-title>{{ header.title }}</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon @click.stop="dark ? offDarkMode() : onDarkMode()">
-                <v-icon>mdi-{{header.icon.darkmode}}</v-icon>
+                <v-icon>mdi-{{ header.icon.darkmode }}</v-icon>
             </v-btn>
         </v-app-bar>
 
@@ -34,43 +36,63 @@
 </template>
 
 <script>
-    import Darkmode from "./assets/darkmode";
+import Darkmode from "./assets/darkmode";
 
-    import FNavbarList from "./components/NavbarList";
-    import FMainTitle from "./components/Title";
-    import FMainAbout from "./components/About";
-    import FMainChips from "./components/Chips";
-    import FContact from "./components/Contact";
-    import FMainSite from "./components/Site";
-    import FDonate from "./components/Donate";
-    import FFooter from "./components/Footer";
+import FNavbarList from "./components/NavbarList";
+import FMainTitle from "./components/Title";
+import FMainAbout from "./components/About";
+import FMainChips from "./components/Chips";
+import FContact from "./components/Contact";
+import FMainSite from "./components/Site";
+import FDonate from "./components/Donate";
+import FFooter from "./components/Footer";
 
-    export default {
-        name: "App",
+export default {
+    name: "App",
 
-        components: {
-            FNavbarList,
-            FMainTitle,
-            FMainAbout,
-            FMainChips,
-            FMainSite,
-            FContact,
-            FDonate,
-            FFooter,
-        },
+    metaInfo: {
+        title: "FlyingSky's Home - 回忆化成一场长的梦",
+        meta: [
+            {
+                name: "keywords",
+                content:
+                    "FlyingSky, FlyingSky-CN, 飞天, 个人网站, Developer, Web",
+            },
+            {
+                name: "description",
+                content:
+                    "这里是 FlyingSky (飞天)" +
+                    " // 坐标地球 / 中学生 / 喵呜 // " +
+                    "喜欢各种折腾，会敲代码，会剪视频，偶尔试着做些音乐。" +
+                    "虽然没有好的设备，但还是喜欢玩摄影。仰望各界大佬。" +
+                    "认识一下？希望能和你一起，理解这世界。",
+            },
+        ],
+    },
 
-        data: () => ({
-            onDarkMode() {},
-            offDarkMode() {},
-            header: require("./data/header.json"),
-            dark: false,
-            drawer: false
-        }),
+    components: {
+        FNavbarList,
+        FMainTitle,
+        FMainAbout,
+        FMainChips,
+        FMainSite,
+        FContact,
+        FDonate,
+        FFooter,
+    },
 
-        mounted() {
-            Darkmode(this);
-        },
-    };
+    data: () => ({
+        onDarkMode() {},
+        offDarkMode() {},
+        header: require("./data/header.json"),
+        dark: false,
+        drawer: false,
+    }),
+
+    mounted() {
+        Darkmode(this);
+    },
+};
 </script>
 
 <style src="./assets/global.css"></style>
