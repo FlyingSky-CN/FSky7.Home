@@ -1,14 +1,12 @@
 <template>
-    <div class="my-12 px-4 text-caption" style="opacity: .75">
+    <div class="my-12 px-4 text-caption" style="opacity: 0.75">
         <b>FlyingSky's Website</b>
         <br />Created by FlyingSky with ♥ since 2017.
         <br />
-        <br />&copy; 2017-2021 FlyingSky.
+        <br />&copy; 2017-{{ year() }} FlyingSky.
         <v-dialog v-model="dialog" max-width="768px" :dark="dark">
             <template v-slot:activator="{ on, attrs }">
-                <a v-bind="attrs" v-on="on">
-                    隐私政策 Privacy Policy
-                </a>
+                <a v-bind="attrs" v-on="on"> 隐私政策 Privacy Policy. </a>
             </template>
             <v-card :dark="dark">
                 <f-privacy-policy></f-privacy-policy>
@@ -24,22 +22,28 @@
 </template>
 
 <script>
-    import FPrivacyPolicy from "./PrivacyPolicy";
+import FPrivacyPolicy from "./PrivacyPolicy";
 
-    export default {
-        components: {
-            FPrivacyPolicy
+export default {
+    components: {
+        FPrivacyPolicy,
+    },
+
+    data: () => ({
+        dialog: false,
+    }),
+
+    props: {
+        dark: {
+            type: Boolean,
+            required: true,
         },
+    },
 
-        data: () => ({
-            dialog: false
-        }),
-
-        props: {
-            dark: {
-                type: Boolean,
-                required: true,
-            },
+    methods: {
+        year() {
+            return new Date().getFullYear();
         },
-    }
+    },
+};
 </script>

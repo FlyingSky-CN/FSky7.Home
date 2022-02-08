@@ -23,7 +23,7 @@
 
         <v-main :dark="dark">
             <f-main-title></f-main-title>
-            <v-container>
+            <v-container class="f-container">
                 <f-main-about :dark="dark"></f-main-about>
                 <f-main-chips :dark="dark"></f-main-chips>
                 <f-contact :dark="dark"></f-contact>
@@ -50,25 +50,7 @@ import FFooter from "./components/Footer";
 export default {
     name: "App",
 
-    metaInfo: {
-        title: "FlyingSky's Home - 回忆化成一场长的梦",
-        meta: [
-            {
-                name: "keywords",
-                content:
-                    "FlyingSky, FlyingSky-CN, 飞天, 个人网站, Developer, Web",
-            },
-            {
-                name: "description",
-                content:
-                    "这里是 FlyingSky (飞天)" +
-                    " // 坐标地球 / 中学生 / 喵呜 // " +
-                    "喜欢各种折腾，会敲代码，会剪视频，偶尔试着做些音乐。" +
-                    "虽然没有好的设备，但还是喜欢玩摄影。仰望各界大佬。" +
-                    "认识一下？希望能和你一起，理解这世界。",
-            },
-        ],
-    },
+    metaInfo: require('./data/meta.json'),
 
     components: {
         FNavbarList,
@@ -86,7 +68,7 @@ export default {
         offDarkMode() {},
         header: require("./data/header.json"),
         dark: false,
-        drawer: false,
+        drawer: null,
     }),
 
     mounted() {

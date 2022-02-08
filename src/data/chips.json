@@ -16,11 +16,11 @@
     },
     {
         "icon": "atom",
-        "text": "解谜玩家"
+        "text": "解谜"
     },
     {
-        "icon": "judaism",
-        "text": "Ingress Res Agent"
+        "icon": "hexagon-multiple-outline",
+        "text": "Ingress Res"
     },
     {
         "icon": "code-tags",
@@ -44,7 +44,7 @@
     },
     {
         "icon": "music-note-outline",
-        "text": "音游玩家"
+        "text": "音游人"
     },
     {
         "icon": "source-branch",

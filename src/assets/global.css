@@ -30,3 +30,7 @@ body::-webkit-scrollbar,
 .f-dark .f-text {
     color: #fff!important;
 }
+
+.f-container {
+    max-width: 896px;
+}
