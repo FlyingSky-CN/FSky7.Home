@@ -18,10 +18,10 @@
             "color": "#787D7B"
         },
         {
-            "href": "https://weibo.com/flyingsky7",
-            "key": "Weibo",
-            "value": "@FlyingSky",
-            "color": "#F9BF45"
+            "href": "https://bcom.moe/@flyingsky",
+            "key": "Mastodon",
+            "value": "@flyingsky@bcom.moe",
+            "color": "#2B90D9"
         }
     ]
 }
