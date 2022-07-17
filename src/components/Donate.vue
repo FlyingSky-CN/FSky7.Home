@@ -1,5 +1,5 @@
 <template>
-    <v-card class="pt-4" :dark="dark" elevation="0" style="background: none;">
+    <v-card class="pt-4" :dark="dark" elevation="0" style="background: none">
         <v-list-item>
             <v-list-item-content>
                 <v-list-item-title class="headline">赞助我</v-list-item-title>
@@ -14,20 +14,26 @@
             <v-btn
                 class="ma-2"
                 elevation="0"
-                style="background: linear-gradient(90deg, #946ce6, #7e5fd9); color: white"
-                href="https://afdian.net/@flyingsky"
-            >爱发电 / Afdian</v-btn>
+                :style="'background: ' + color + '; color: white;'"
+                :href="link"
+                v-text="text"
+            />
         </v-card-actions>
     </v-card>
 </template>
 
 <script>
-    export default {
-        props: {
-            dark: {
-                type: Boolean,
-                required: true,
-            },
+export default {
+    data: () => ({
+        color: "#7d61cd",
+        link: "https://afdian.net/@flyingsky",
+        text: "爱发电",
+    }),
+    props: {
+        dark: {
+            type: Boolean,
+            required: true,
         },
-    };
+    },
+};
 </script>

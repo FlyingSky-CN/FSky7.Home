@@ -49,7 +49,7 @@ export default {
 
 .f-home .v-icon {
     font-size: 256px;
-    opacity: 0.05;
+    opacity: 0.1;
     color: #000;
 }
 

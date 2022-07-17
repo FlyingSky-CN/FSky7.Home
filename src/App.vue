@@ -4,6 +4,7 @@
             app
             elevate-on-scroll
             clipped-left
+            style="transition: 0s ease background-color, 280ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow;"
             :dark="dark"
             :color="dark ? '#121212' : '#fff'"
         >

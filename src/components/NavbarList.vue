@@ -1,6 +1,6 @@
 <template>
     <v-list shaped>
-        <v-list-item-group color="primary">
+        <v-list-item-group color="primary" v-model="item">
             <f-navbar-item :item="item" v-for="(item, index) in items" :key="index"></f-navbar-item>
         </v-list-item-group>
     </v-list>
@@ -11,6 +11,7 @@
 
     export default {
         data: () => ({
+            item: 0,
             items: require('../data/navbar.json')
         }),
 

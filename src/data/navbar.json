@@ -1,4 +1,5 @@
-[{
+[
+    {
         "text": "Home",
         "data": null,
         "icon": "gesture",
@@ -21,7 +22,8 @@
     },
     {
         "text": "Projects",
-        "data": [{
+        "data": [
+            {
                 "href": "https://github.com/FlyingSky-CN/MDr",
                 "text": "Typecho theme | MDr"
             },
@@ -53,5 +55,12 @@
         "icon": "package-variant-closed",
         "link": null,
         "color": "deep-purple"
+    },
+    {
+        "text": "Links",
+        "data": null,
+        "icon": "link-variant",
+        "link": "https://blog.fsky7.com/links",
+        "color": "grey"
     }
 ]
