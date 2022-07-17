@@ -10,8 +10,11 @@ module.exports = {
   ],
   productionSourceMap: false,
   configureWebpack: config => {
-    if (process.env.NODE_ENV !== 'production') return
+    if (process.env.NODE_ENV !== 'production') return {}
     return {
+      performance: {
+        hints: false,
+      },
       plugins: [
         new PrerenderSPAPlugin({
           staticDir: path.join(__dirname, 'dist'),
